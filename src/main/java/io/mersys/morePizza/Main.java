@@ -1,7 +1,7 @@
-package io.mersys;
+package io.mersys.morePizza;
 
 
-import io.mersys.service.Service;
+import io.mersys.morePizza.service.Service;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -13,8 +13,8 @@ class Main {
         final Service service = new Service();
 
         try {
-            Path inputPath = Paths.get("src", "main", "resources", "in");
-            Path outputPath = Paths.get("src", "main", "resources", "out");
+            Path inputPath = Paths.get("src", "main", "resources","morePizza", "in");
+            Path outputPath = Paths.get("src", "main", "resources","morePizza", "out");
 
             Files.newDirectoryStream(inputPath,
                     path -> path.toString().endsWith(".txt"))

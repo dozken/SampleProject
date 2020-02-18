@@ -1,4 +1,4 @@
-package io.mersys.service;
+package io.mersys.morePizza.service;
 
 
 import java.io.BufferedReader;
@@ -6,21 +6,40 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.*;
+import java.util.Arrays;
 
 import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
 
 public class Service {
 
-    public Object doStuff(){
+    int maxSlices;
+    int[] slices;
+
+    public Object doStuff() {
+        //printing
+        System.out.printf("%d %d\n", maxSlices, slices.length);
+        System.out.println(Arrays.toString(slices));
+        //end printing
+
+
+
         return null;
+
     }
 
     public void readInputFile(Path path) {
         //TODO read input file and assign constraints
         try (BufferedReader br = Files.newBufferedReader(path)) {
-            Integer.parseInt(br.readLine());
+            String[] settings = br.readLine().split(" ");
+            this.maxSlices = Integer.parseInt(settings[0]);
+            int typeCount = Integer.parseInt(settings[1]);
+
+            this.slices = new int[typeCount];
+            for (int i = 0; i < typeCount; i++) {
+                int numericValue = Character.getNumericValue(br.read());
+                this.slices[i] = numericValue;
+                br.skip(1);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

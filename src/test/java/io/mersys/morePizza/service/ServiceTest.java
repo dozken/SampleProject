@@ -1,6 +1,5 @@
-package io.mersys.service;
+package io.mersys.morePizza.service;
 
-import kz.mersys.service.Service;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,8 +18,8 @@ class ServiceTest {
     @BeforeEach
     void setUp() {
         service = new Service();
-        inputPath = Paths.get("src", "test", "resources", "in");
-        outputPath = Paths.get("src", "test", "resources", "out");
+        inputPath = Paths.get("src", "test", "resources", "morePizza", "morePizza/in");
+        outputPath = Paths.get("src", "test", "resources", "morePizza", "morePizza/out");
     }
 
     @AfterEach
