@@ -14,6 +14,7 @@ class Main {
 
     public static void main(String[] args) {
         final Service service = new Service();
+        int a [] = new int[1000000000];
 
         try {
             Path inputPath = Paths.get("src", "main", "resources","morePizza", "in");
@@ -30,7 +31,7 @@ class Main {
 
 
                         start = Instant.now();
-                        List<Integer> obj = service.doStuff();
+                        List<Integer> obj = service.doStuffYeldar1();
                         finish = Instant.now();
                         timeElapsed = Duration.between(start, finish).toMillis();
                         System.out.printf("process %s takes %d\n",path.getFileName(), timeElapsed);
