@@ -6,6 +6,9 @@ import io.mersys.morePizza.service.Service;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.Duration;
+import java.time.Instant;
+import java.util.List;
 
 class Main {
 
@@ -19,10 +22,25 @@ class Main {
             Files.newDirectoryStream(inputPath,
                     path -> path.toString().endsWith(".txt"))
                     .forEach(path -> {
+                        Instant start = Instant.now();
                         service.readInputFile(path);
-                        Object slideshow = service.doStuff();
-                        service.writeOutputFile(outputPath.resolve(path.getFileName()), slideshow);
-                        System.out.println();
+                        Instant finish = Instant.now();
+                        long timeElapsed = Duration.between(start, finish).toMillis();
+                        System.out.printf("read %s takes %d\n",path.getFileName(), timeElapsed);
+
+
+                        start = Instant.now();
+                        List<Integer> obj = service.doStuff();
+                        finish = Instant.now();
+                        timeElapsed = Duration.between(start, finish).toMillis();
+                        System.out.printf("process %s takes %d\n",path.getFileName(), timeElapsed);
+
+
+                        start = Instant.now();
+                        service.writeOutputFile(outputPath.resolve(path.getFileName()), obj);
+                        finish = Instant.now();
+                        timeElapsed = Duration.between(start, finish).toMillis();
+                        System.out.printf("write %s takes %d\n\n",path.getFileName(), timeElapsed);
                     });
 
         } catch (Exception e) {

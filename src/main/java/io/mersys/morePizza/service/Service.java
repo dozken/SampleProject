@@ -6,7 +6,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Arrays;
+import java.util.*;
 
 import static java.util.stream.Collectors.joining;
 
@@ -15,15 +15,34 @@ public class Service {
     int maxSlices;
     int[] slices;
 
-    public Object doStuff() {
+
+    public List<Integer> doStuff() {
+        List<Integer> positions = new ArrayList<>();
         //printing
         System.out.printf("%d %d\n", maxSlices, slices.length);
         System.out.println(Arrays.toString(slices));
         //end printing
 
+        int complement = maxSlices;
 
+        int max = 0;
+        for (int i = slices.length - 1; i >= 0; i--) {
+            int candidate = complement - slices[i];
+            if (candidate < 0) {
+                continue;
+            }
+            complement = candidate;
+            max += slices[i];
+            if(max > maxSlices)
+                break;
 
-        return null;
+            positions.add(i);
+
+        }
+
+        System.out.println("Max slices: " + max);
+        Collections.reverse(positions);
+        return positions;
 
     }
 
@@ -35,10 +54,9 @@ public class Service {
             int typeCount = Integer.parseInt(settings[1]);
 
             this.slices = new int[typeCount];
-            for (int i = 0; i < typeCount; i++) {
-                int numericValue = Character.getNumericValue(br.read());
-                this.slices[i] = numericValue;
-                br.skip(1);
+            String[] str = br.readLine().split(" ");
+            for (int i = 0; i < str.length; i++) {
+                this.slices[i] = Integer.parseInt(str[i]);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -46,7 +64,7 @@ public class Service {
     }
 
 
-    public void writeOutputFile(Path path, Object obj) {
+    public void writeOutputFile(Path path, List<Integer> obj) {
         //TODO write obj to output file
         try {
             Files.createDirectories(path.getParent());
@@ -55,8 +73,12 @@ public class Service {
         }
 
         try (BufferedWriter writer = Files.newBufferedWriter(path)) {
-            writer.write(String.format("%d", 1));
+            writer.write(String.format("%d", obj.size()));
             writer.newLine();
+
+            for (Integer i : obj) {
+                writer.write(String.format("%d ", i));
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
