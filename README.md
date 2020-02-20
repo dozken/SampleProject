@@ -1,2 +1,1 @@
-# Hash Code 2020
-### Online Qualification Round
+Sample project
