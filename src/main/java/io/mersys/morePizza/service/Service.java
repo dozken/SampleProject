@@ -183,14 +183,17 @@ public class Service {
         //TODO read input file and assign constraints
         try (BufferedReader br = Files.newBufferedReader(path)) {
             String[] settings = br.readLine().split(" ");
-            this.maxSlices = Integer.parseInt(settings[0]);
-            int typeCount = Integer.parseInt(settings[1]);
+//            this.maxSlices = Integer.parseInt(settings[0]);
+//            int typeCount = Integer.parseInt(settings[1]);
 
-            this.slices = new int[typeCount];
+//            this.slices = new int[typeCount];
             String[] str = br.readLine().split(" ");
+            int sum =0;
             for (int i = 0; i < str.length; i++) {
-                this.slices[i] = Integer.parseInt(str[i]);
+                sum += Integer.parseInt(str[i]);
             }
+
+            System.out.println(sum);
         } catch (IOException e) {
             e.printStackTrace();
         }

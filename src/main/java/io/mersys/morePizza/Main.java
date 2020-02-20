@@ -17,11 +17,11 @@ class Main {
         int a [] = new int[1000000000];
 
         try {
-            Path inputPath = Paths.get("src", "main", "resources","morePizza", "in");
+            Path inputPath = Paths.get("src", "main", "resources","morePizza", "out");
             Path outputPath = Paths.get("src", "main", "resources","morePizza", "out");
 
             Files.newDirectoryStream(inputPath,
-                    path -> path.toString().endsWith(".txt"))
+                    path -> path.toString().endsWith(".out"))
                     .forEach(path -> {
                         Instant start = Instant.now();
                         service.readInputFile(path);
@@ -29,19 +29,19 @@ class Main {
                         long timeElapsed = Duration.between(start, finish).toMillis();
                         System.out.printf("read %s takes %d\n",path.getFileName(), timeElapsed);
 
-
-                        start = Instant.now();
-                        List<Integer> obj = service.doStuffYeldar1();
-                        finish = Instant.now();
-                        timeElapsed = Duration.between(start, finish).toMillis();
-                        System.out.printf("process %s takes %d\n",path.getFileName(), timeElapsed);
-
-
-                        start = Instant.now();
-                        service.writeOutputFile(outputPath.resolve(path.getFileName()), obj);
-                        finish = Instant.now();
-                        timeElapsed = Duration.between(start, finish).toMillis();
-                        System.out.printf("write %s takes %d\n\n",path.getFileName(), timeElapsed);
+//
+//                        start = Instant.now();
+//                        List<Integer> obj = service.doStuffYeldar1();
+//                        finish = Instant.now();
+//                        timeElapsed = Duration.between(start, finish).toMillis();
+//                        System.out.printf("process %s takes %d\n",path.getFileName(), timeElapsed);
+//
+//
+//                        start = Instant.now();
+//                        service.writeOutputFile(outputPath.resolve(path.getFileName()), obj);
+//                        finish = Instant.now();
+//                        timeElapsed = Duration.between(start, finish).toMillis();
+//                        System.out.printf("write %s takes %d\n\n",path.getFileName(), timeElapsed);
                     });
 
         } catch (Exception e) {
