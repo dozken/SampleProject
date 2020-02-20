@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aed516b1-8486-4c00-8b7b-254f06d16726" name="Default Changelist" comment="">
+    <list default="true" id="aed516b1-8486-4c00-8b7b-254f06d16726" name="Default Changelist" comment=" Java heap space">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/mersys/morePizza/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/mersys/morePizza/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/mersys/morePizza/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/mersys/morePizza/service/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/morePizza/in/a_example.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/morePizza/in/a_example.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/morePizza/in/b_small.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/morePizza/in/b_small.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/morePizza/in/c_medium.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/morePizza/in/c_medium.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/morePizza/in/d_quite_big.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/morePizza/in/d_quite_big.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/morePizza/out/a_example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/morePizza/out/a_example.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/morePizza/out/b_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/morePizza/out/b_small.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/morePizza/out/c_medium.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/morePizza/out/c_medium.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/morePizza/out/d_quite_big.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/morePizza/out/d_quite_big.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/morePizza/in/d_quite_big.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/morePizza/out/d_quite_big.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/morePizza/out/d_quite_big.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/mersys/morePizza/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/mersys/morePizza/service/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/morePizza/out/a_example.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/morePizza/out/a_example.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/morePizza/out/b_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/morePizza/out/b_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/morePizza/out/c_medium.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/morePizza/out/c_medium.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582120718262</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=" Java heap space">
+      <created>1582178421152</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582178421152</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,30 +158,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="756" y="379" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1582014131719" />
-    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1582120717653">
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1582178447039">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582120717653" />
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582178447039" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1582178446089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582178446089" />
     <state x="806" y="413" width="307" height="285" key="Github.ShareDialog" timestamp="1582016416688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="806" y="413" width="307" height="285" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582016416688" />
-    <state width="1860" height="399" key="GridCell.Tab.0.bottom" timestamp="1582177602669">
+    <state width="1860" height="342" key="GridCell.Tab.0.bottom" timestamp="1582179799015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="399" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582177602669" />
-    <state width="1860" height="399" key="GridCell.Tab.0.center" timestamp="1582177602669">
+    <state width="1860" height="342" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582179799015" />
+    <state width="1860" height="342" key="GridCell.Tab.0.center" timestamp="1582179799015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="399" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582177602669" />
-    <state width="1860" height="399" key="GridCell.Tab.0.left" timestamp="1582177602669">
+    <state width="1860" height="342" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582179799015" />
+    <state width="1860" height="342" key="GridCell.Tab.0.left" timestamp="1582179799014">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="399" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582177602669" />
-    <state width="1860" height="399" key="GridCell.Tab.0.right" timestamp="1582177602669">
+    <state width="1860" height="342" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582179799014" />
+    <state width="1860" height="342" key="GridCell.Tab.0.right" timestamp="1582179799015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="399" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582177602669" />
+    <state width="1860" height="342" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582179799015" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582120754010">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -199,10 +206,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582016376217" />
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1582120719789">
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2" timestamp="1582178422799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582120719789" />
+    <state x="552" y="241" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582178422799" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1582120771477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -217,8 +224,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/io/mersys/morePizza/service/Service.java</url>
-          <line>110</line>
+          <line>119</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/mersys/morePizza/service/Service.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

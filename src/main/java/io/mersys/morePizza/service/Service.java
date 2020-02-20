@@ -90,13 +90,19 @@ public class Service {
 
         for (int i = 0; i < slices.length; i++) {
             for (int i1 = maxSlices - slices[i]; i1 >= 0; i1--) {
-                if (dp[i1] != -1) {
+                if (dp[i1] != -1 && dp[i1+slices[i]] == -1) {
                     dp[i1+slices[i]] = i;
                 }
             }
         }
 
-        while (dp[maxSlices--] == -1);
+        System.out.println(Arrays.toString(dp));
+
+        while (dp[maxSlices] == -1) {
+            maxSlices--;
+        }
+
+        System.out.println(maxSlices);
 
         List<Integer> answers = new ArrayList<>();
         while (maxSlices != 0) {
@@ -104,7 +110,10 @@ public class Service {
             maxSlices -= slices[dp[maxSlices]];
         }
 
+        Collections.reverse(answers);
+        int sum = answers.stream().mapToInt(x -> slices[x]).sum();
         System.out.println(">>>>>"+answers);
+        System.out.println("sum >>>"+sum);
         return answers;
     }
     public List<Integer> doStuffYeldar() {
@@ -208,11 +217,12 @@ public class Service {
 
 
     public List<Integer> doStuffAdil(){
-        //maxSlices
-        //slices[]
         Set<Integer> result = new HashSet<Integer>();
 
-        
+        //maxSlices
+        //slices[]
+
+
 
 
 
