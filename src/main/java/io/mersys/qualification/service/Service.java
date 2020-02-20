@@ -1,4 +1,4 @@
-package io.mersys.service;
+package io.mersys.qualification.service;
 
 
 import java.io.BufferedReader;
@@ -13,7 +13,8 @@ import static java.util.stream.Collectors.toList;
 
 public class Service {
 
-    public Object doStuff(){
+    //TODO change return type
+    public Object process(){
         return null;
     }
 
