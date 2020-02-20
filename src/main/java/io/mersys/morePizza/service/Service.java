@@ -82,7 +82,7 @@ public class Service {
     public List<Integer> doStuffYeldar1() {
         //maxSlices
         //slices[]
-        List<Integer> dpp = new ArrayList<>();
+//        List<Integer> dpp = new ArrayList<>();
 
         int dp[] = new int[maxSlices + 1];
         Arrays.fill(dp, -1);
@@ -96,13 +96,13 @@ public class Service {
             }
         }
 
-        System.out.println(Arrays.toString(dp));
+//        System.out.println(Arrays.toString(dp));
 
         while (dp[maxSlices] == -1) {
             maxSlices--;
         }
 
-        System.out.println(maxSlices);
+//        System.out.println(maxSlices);
 
         List<Integer> answers = new ArrayList<>();
         while (maxSlices != 0) {
@@ -111,9 +111,9 @@ public class Service {
         }
 
         Collections.reverse(answers);
-        int sum = answers.stream().mapToInt(x -> slices[x]).sum();
-        System.out.println(">>>>>"+answers);
-        System.out.println("sum >>>"+sum);
+//        int sum = answers.stream().mapToInt(x -> slices[x]).sum();
+//        System.out.println(">>>>>"+answers);
+//        System.out.println("sum >>>"+sum);
         return answers;
     }
     public List<Integer> doStuffYeldar() {
