@@ -22,7 +22,6 @@ public class Service {
                 .collect(Collectors.toList());
         return solve(maxSlices, collect );
     }
-
     public static ArrayList<Integer> solve(Integer MAX, List<Integer> inputList) {
 
         ArrayList<Integer> solutionList = new ArrayList<Integer>(); // List to store the best solution
@@ -108,7 +107,6 @@ public class Service {
         System.out.println(">>>>>"+answers);
         return answers;
     }
-
     public List<Integer> doStuffYeldar() {
         //maxSlices
         //slices[]
@@ -138,10 +136,11 @@ public class Service {
         }
 
         System.out.println(">>>>>" + answers);
+        Collections.reverse(answers);
         return answers;
     }
 
-    public List<Integer> doStuff() {
+    public List<Integer> doStuffDos() {
         List<Integer> positions = new ArrayList<>();
         //printing
         System.out.printf("%d %d\n", maxSlices, slices.length);
@@ -187,8 +186,6 @@ public class Service {
             e.printStackTrace();
         }
     }
-
-
     public void writeOutputFile(Path path, List<Integer> obj) {
         //TODO write obj to output file
         try {
@@ -209,4 +206,16 @@ public class Service {
         }
     }
 
+
+    public List<Integer> doStuffAdil(){
+        //maxSlices
+        //slices[]
+        Set<Integer> result = new HashSet<Integer>();
+
+        
+
+
+
+        return new ArrayList<>(result);
+    }
 }

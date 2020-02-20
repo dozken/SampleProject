@@ -31,7 +31,7 @@ class Main {
 
 
                         start = Instant.now();
-                        List<Integer> obj = service.doStuffYeldar1();
+                        List<Integer> obj = service.doStuffYeldar();
                         finish = Instant.now();
                         timeElapsed = Duration.between(start, finish).toMillis();
                         System.out.printf("process %s takes %d\n",path.getFileName(), timeElapsed);
